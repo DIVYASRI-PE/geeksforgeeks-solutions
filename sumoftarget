@@ -1,5 +1,5 @@
 import java.util.*;
-class gfg1 {
+class sumoftarget {
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
         ArrayList<Integer> ans = new ArrayList<>();
         int sum =0;
