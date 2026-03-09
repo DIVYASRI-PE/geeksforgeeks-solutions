@@ -1,5 +1,5 @@
 import java.util.*;
-class gfg2 
+class missingnumber
 {
     int missingNum(int arr[]) {
         
