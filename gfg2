@@ -1,15 +1,21 @@
 import java.util.*;
-class gfg2 {
+class gfg2 
+{
     int missingNum(int arr[]) {
-       int n = arr.length+1;
-       int totalsum =n = n*(n+1)/2 ;
-       int arrsum = 0;
-       for(int i = 0 ; i < arr.length ; i++)
-       {
-          arrsum += arr[i]; 
-           
-        }
-       return totalsum - arrsum ;
         
+        int n = arr.length + 1;
+        boolean[] visited = new boolean[n + 1];
+
+        for(int i = 0; i < arr.length; i++){
+            visited[arr[i]] = true;
+        }
+
+        for(int i = 1; i <= n; i++){
+            if(!visited[i]){
+                return i;
+            }
+        }
+
+        return -1;
     }
 }
